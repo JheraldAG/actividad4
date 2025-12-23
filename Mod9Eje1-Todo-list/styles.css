@@ -1,16 +1,42 @@
+/* ===============================
+   VARIABLES DE COLOR
+================================ */
+:root {
+    --primary: #14b8a6;       /* Verde turquesa para botones principales */
+    --secondary: #0f172a;     /* Azul noche de fondo */
+    --accent: #22d3ee;        /* Cian brillante para detalles */
+    --bg-card: #f4f6fb;       /* Fondo de la card */
+    --bg-item: #ffffff;        /* Fondo de cada item */
+    --bg-item-hover: #e0f7fa; /* Hover items */
+    --text-main: #1f2933;     /* Texto principal */
+    --text-muted: #6b7280;    /* Texto secundario / placeholder */
+    --btn-delete: #ef4444;    /* Rojo para eliminar */
+    --btn-delete-hover: #f87171;
+}
+
+/* ===============================
+   RESET
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===============================
+   BODY
+================================ */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     min-height: 100vh;
     padding: 2rem;
+    color: var(--text-main);
 }
 
+/* ===============================
+   CONTAINER & HEADER
+================================ */
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -27,13 +53,19 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+/* ===============================
+   TODO APP CARD
+================================ */
 .todo-app {
-    background: white;
+    background: var(--bg-card);
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
+/* ===============================
+   INPUT SECTION
+================================ */
 .input-section {
     display: flex;
     gap: 1rem;
@@ -46,18 +78,33 @@ header h1 {
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#todoInput:focus {
+    outline: none;
+    border-color: var(--primary);
 }
 
 #addBtn {
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
+#addBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(34, 211, 238, 0.4);
+}
+
+/* ===============================
+   FILTERS
+================================ */
 .filters {
     display: flex;
     gap: 0.5rem;
@@ -67,27 +114,34 @@ header h1 {
 .filter-btn {
     flex: 1;
     padding: 0.8rem;
-    background: #f5f5f5;
+    background: #f4f6fb;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
+    color: var(--text-main);
 }
 
 .filter-btn.active {
-    background: #667eea;
+    background: var(--primary);
     color: white;
 }
 
+/* ===============================
+   COUNT
+================================ */
 .count {
     display: inline-block;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     padding: 0.2rem 0.5rem;
     border-radius: 10px;
     font-size: 0.8rem;
     margin-left: 0.3rem;
 }
 
+/* ===============================
+   TODO LIST ITEMS
+================================ */
 .todo-list {
     list-style: none;
     margin-bottom: 1.5rem;
@@ -99,14 +153,14 @@ header h1 {
     display: flex;
     align-items: center;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--bg-item);
     border-radius: 8px;
     margin-bottom: 0.5rem;
     transition: all 0.3s;
 }
 
 .todo-item:hover {
-    background: #e9ecef;
+    background: var(--bg-item-hover);
 }
 
 .todo-item.completed {
@@ -115,7 +169,7 @@ header h1 {
 
 .todo-item.completed .todo-text {
     text-decoration: line-through;
-    color: #999;
+    color: var(--text-muted);
 }
 
 .todo-checkbox {
@@ -130,8 +184,11 @@ header h1 {
     font-size: 1rem;
 }
 
+/* ===============================
+   DELETE BUTTON
+================================ */
 .delete-btn {
-    background: #ff4757;
+    background: var(--btn-delete);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -139,6 +196,13 @@ header h1 {
     cursor: pointer;
 }
 
+.delete-btn:hover {
+    background: var(--btn-delete-hover);
+}
+
+/* ===============================
+   ACTIONS
+================================ */
 .actions {
     display: flex;
     justify-content: space-between;
@@ -148,15 +212,5 @@ header h1 {
 }
 
 #clearCompleted {
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-#itemsLeft {
-    color: #666;
-    font-size: 0.9rem;
-}
+    background: var(--btn-delete);
+    color: white
