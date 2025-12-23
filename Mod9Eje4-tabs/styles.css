@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #4ade80 0%, #14b8a6 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
     min-height: 100vh;
     padding: 2rem;
 }
@@ -24,14 +24,14 @@ body {
 }
 
 h1 {
-    color: #064e3b;
+    color: #4c1d95;
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
     text-align: center;
-    color: #065f46;
+    color: #5b21b6;
     margin-bottom: 2rem;
 }
 
@@ -40,7 +40,7 @@ h1 {
     display: flex;
     gap: 0.5rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #d1fae5;
+    border-bottom: 2px solid #e0d7f7;
     overflow-x: auto;
 }
 
@@ -53,7 +53,7 @@ h1 {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    color: #065f46;
+    color: #5b21b6;
     transition: all 0.3s;
     display: flex;
     align-items: center;
@@ -63,14 +63,14 @@ h1 {
 }
 
 .tab-btn:hover {
-    color: #10b981;
-    background: rgba(16, 185, 129, 0.05);
+    color: #c084fc;
+    background: rgba(192, 132, 252, 0.05);
 }
 
 .tab-btn.active {
-    color: #10b981;
-    border-bottom-color: #10b981;
-    background: rgba(16, 185, 129, 0.1);
+    color: #c084fc;
+    border-bottom-color: #c084fc;
+    background: rgba(192, 132, 252, 0.1);
 }
 
 .tab-btn .icon {
@@ -93,23 +93,17 @@ h1 {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .tab-content h2 {
-    color: #064e3b;
+    color: #4c1d95;
     margin-bottom: 1rem;
 }
 
 .tab-content p {
-    color: #065f46;
+    color: #5b21b6;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -125,7 +119,7 @@ h1 {
 .feature {
     text-align: center;
     padding: 1.5rem;
-    background: #d1fae5;
+    background: #ede9fe;
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -138,11 +132,11 @@ h1 {
     font-size: 3rem;
     display: block;
     margin-bottom: 1rem;
-    color: #10b981;
+    color: #a78bfa;
 }
 
 .feature h3 {
-    color: #065f46;
+    color: #5b21b6;
     margin-bottom: 0.5rem;
 }
 
@@ -160,17 +154,17 @@ h1 {
 .service-list li {
     padding: 1rem;
     margin-bottom: 0.8rem;
-    background: #d1fae5;
+    background: #ede9fe;
     border-radius: 8px;
-    border-left: 4px solid #10b981;
+    border-left: 4px solid #a78bfa;
     font-size: 1.05rem;
     transition: transform 0.3s;
-    color: #065f46;
+    color: #5b21b6;
 }
 
 .service-list li:hover {
     transform: translateX(5px);
-    background: #a7f3d0;
+    background: #ddd6fe;
 }
 
 /* Stats Grid */
@@ -182,12 +176,12 @@ h1 {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, #4ade80 0%, #14b8a6 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
     color: white;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 5px 15px rgba(167, 139, 250, 0.3);
 }
 
 .stat-number {
@@ -214,7 +208,7 @@ h1 {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #064e3b;
+    color: #4c1d95;
     font-weight: 600;
 }
 
@@ -222,24 +216,24 @@ h1 {
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid #d1fae5;
+    border: 2px solid #ede9fe;
     border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
     transition: border-color 0.3s;
-    color: #065f46;
+    color: #5b21b6;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #10b981;
+    border-color: #a78bfa;
 }
 
 .cta-btn {
     width: 100%;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #4ade80 0%, #14b8a6 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -251,16 +245,16 @@ h1 {
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 5px 20px rgba(167, 139, 250, 0.4);
 }
 
 .keyboard-hint {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
-    background: #d1fae5;
+    background: #ede9fe;
     border-radius: 8px;
-    color: #065f46;
+    color: #5b21b6;
     font-size: 0.9rem;
 }
 
