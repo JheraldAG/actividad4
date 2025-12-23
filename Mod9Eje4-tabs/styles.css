@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4ade80 0%, #14b8a6 100%);
     min-height: 100vh;
     padding: 2rem;
 }
@@ -17,21 +17,21 @@ body {
 }
 
 .tabs-container {
-    background: white;
+    background: #ffffff;
     border-radius: 20px;
     padding: 2.5rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    color: #333;
+    color: #064e3b;
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
     text-align: center;
-    color: #666;
+    color: #065f46;
     margin-bottom: 2rem;
 }
 
@@ -40,7 +40,7 @@ h1 {
     display: flex;
     gap: 0.5rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 2px solid #d1fae5;
     overflow-x: auto;
 }
 
@@ -53,7 +53,7 @@ h1 {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    color: #666;
+    color: #065f46;
     transition: all 0.3s;
     display: flex;
     align-items: center;
@@ -63,14 +63,14 @@ h1 {
 }
 
 .tab-btn:hover {
-    color: #667eea;
-    background: rgba(102, 126, 234, 0.05);
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.05);
 }
 
 .tab-btn.active {
-    color: #667eea;
-    border-bottom-color: #667eea;
-    background: rgba(102, 126, 234, 0.1);
+    color: #10b981;
+    border-bottom-color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
 }
 
 .tab-btn .icon {
@@ -104,12 +104,12 @@ h1 {
 }
 
 .tab-content h2 {
-    color: #333;
+    color: #064e3b;
     margin-bottom: 1rem;
 }
 
 .tab-content p {
-    color: #666;
+    color: #065f46;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -125,7 +125,7 @@ h1 {
 .feature {
     text-align: center;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: #d1fae5;
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -138,10 +138,11 @@ h1 {
     font-size: 3rem;
     display: block;
     margin-bottom: 1rem;
+    color: #10b981;
 }
 
 .feature h3 {
-    color: #667eea;
+    color: #065f46;
     margin-bottom: 0.5rem;
 }
 
@@ -159,16 +160,17 @@ h1 {
 .service-list li {
     padding: 1rem;
     margin-bottom: 0.8rem;
-    background: #f8f9fa;
+    background: #d1fae5;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #10b981;
     font-size: 1.05rem;
     transition: transform 0.3s;
+    color: #065f46;
 }
 
 .service-list li:hover {
     transform: translateX(5px);
-    background: #e9ecef;
+    background: #a7f3d0;
 }
 
 /* Stats Grid */
@@ -180,12 +182,12 @@ h1 {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4ade80 0%, #14b8a6 100%);
     color: white;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
 }
 
 .stat-number {
@@ -212,7 +214,7 @@ h1 {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #064e3b;
     font-weight: 600;
 }
 
@@ -220,23 +222,24 @@ h1 {
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #d1fae5;
     border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
     transition: border-color 0.3s;
+    color: #065f46;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #10b981;
 }
 
 .cta-btn {
     width: 100%;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4ade80 0%, #14b8a6 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -248,16 +251,16 @@ h1 {
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
 }
 
 .keyboard-hint {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
-    background: #f8f9fa;
+    background: #d1fae5;
     border-radius: 8px;
-    color: #666;
+    color: #065f46;
     font-size: 0.9rem;
 }
 
