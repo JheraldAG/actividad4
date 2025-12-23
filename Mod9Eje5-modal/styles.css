@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -22,7 +22,7 @@ body.modal-open {
 }
 
 .header {
-    background: white;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -31,16 +31,16 @@ body.modal-open {
 }
 
 .header h1 {
-    color: #333;
+    color: #b45309;
     margin-bottom: 0.5rem;
 }
 
 .header p {
-    color: #666;
+    color: #78350f;
 }
 
 .content {
-    background: white;
+    background: #ffffff;
     padding: 2.5rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -51,12 +51,12 @@ body.modal-open {
 }
 
 .intro h2 {
-    color: #333;
+    color: #b45309;
     margin-bottom: 1rem;
 }
 
 .intro p {
-    color: #666;
+    color: #78350f;
     line-height: 1.6;
 }
 
@@ -65,7 +65,7 @@ body.modal-open {
 }
 
 .demo-buttons h3 {
-    color: #333;
+    color: #b45309;
     margin-bottom: 1.5rem;
 }
 
@@ -85,23 +85,23 @@ body.modal-open {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
 }
 
 .btn-success {
-    background: #4caf50;
+    background: #16a34a;
 }
 
 .btn-info {
-    background: #2196f3;
+    background: #0ea5e9;
 }
 
 .btn-warning {
-    background: #ff9800;
+    background: #f59e0b;
 }
 
 .btn-secondary {
-    background: #6c757d;
+    background: #6b7280;
 }
 
 .btn:hover {
@@ -117,7 +117,7 @@ body.modal-open {
 }
 
 .feature-card {
-    background: #f8f9fa;
+    background: #ffedd5;
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
@@ -127,15 +127,16 @@ body.modal-open {
     font-size: 3rem;
     display: block;
     margin-bottom: 1rem;
+    color: #f97316;
 }
 
 .feature-card h3 {
-    color: #667eea;
+    color: #b45309;
     margin-bottom: 0.5rem;
 }
 
 .feature-card p {
-    color: #666;
+    color: #78350f;
     font-size: 0.9rem;
 }
 
@@ -191,23 +192,13 @@ body.modal-open {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .modal-close {
@@ -225,22 +216,22 @@ body.modal-open {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
+    color: #78350f;
 }
 
 .modal-close:hover {
-    background: #ff6b6b;
+    background: #ef4444;
     color: white;
     transform: rotate(90deg);
 }
 
 .modal-content h2 {
-    color: #333;
+    color: #b45309;
     margin-bottom: 1rem;
 }
 
 .modal-content p {
-    color: #666;
+    color: #78350f;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -251,7 +242,7 @@ body.modal-open {
 }
 
 .modal-content li {
-    color: #666;
+    color: #78350f;
     margin-bottom: 0.5rem;
 }
 
@@ -268,12 +259,12 @@ body.modal-open {
 
 .modal-icon.success {
     background: #d4edda;
-    color: #4caf50;
+    color: #16a34a;
 }
 
 .modal-icon.info {
     background: #d1ecf1;
-    color: #2196f3;
+    color: #0ea5e9;
 }
 
 .modal-actions {
@@ -293,7 +284,7 @@ body.modal-open {
 .modal-form label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #b45309;
     font-weight: 600;
 }
 
@@ -301,7 +292,7 @@ body.modal-open {
 .modal-form textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #ffedd5;
     border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
@@ -310,7 +301,7 @@ body.modal-open {
 .modal-form input:focus,
 .modal-form textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #f97316;
 }
 
 .gallery {
