@@ -1,43 +1,80 @@
+/* ===============================
+   VARIABLES DE COLOR
+================================ */
+:root {
+    --primary: #14b8a6;       /* Verde turquesa para botones principales */
+    --secondary: #0f172a;     /* Azul noche de fondo */
+    --accent: #22d3ee;        /* Cian brillante para detalles */
+    --bg-card: #f4f6fb;       /* Fondo de la card */
+    --bg-item: #ffffff;        /* Fondo de cada item */
+    --bg-item-hover: #e0f7fa; /* Hover items */
+    --text-main: #1f2933;     /* Texto principal */
+    --text-muted: #6b7280;    /* Texto secundario / placeholder */
+    --btn-edit: #fbbf24;      /* Edit amarillo */
+    --btn-edit-hover: #f59e0b;
+    --btn-delete: #f87171;    /* Rojo suave */
+    --btn-delete-hover: #ef4444;
+    --btn-save: #4caf50;      /* Verde confirmación */
+}
+
+/* ===============================
+   RESET
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===============================
+   BODY
+================================ */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 2rem;
 }
 
+/* ===============================
+   CONTAINER
+================================ */
 .container {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* ===============================
+   CARD
+================================ */
 .card {
-    background: white;
+    background: var(--bg-card);
     border-radius: 20px;
     padding: 2.5rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
 
+/* ===============================
+   TITLES
+================================ */
 h1 {
-    color: #333;
+    color: var(--text-main);
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
 .subtitle {
     text-align: center;
-    color: #666;
+    color: var(--text-muted);
     margin-bottom: 2rem;
 }
 
+/* ===============================
+   INPUT SECTION
+================================ */
 .input-section {
     display: flex;
     gap: 0.5rem;
@@ -55,9 +92,12 @@ h1 {
 
 #itemInput:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: var(--primary);
 }
 
+/* ===============================
+   BUTTONS
+================================ */
 .btn {
     padding: 1rem 1.5rem;
     border: none;
@@ -69,29 +109,35 @@ h1 {
 }
 
 .btn-add {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
 }
 
 .btn-add:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 15px rgba(34, 211, 238, 0.4);
 }
 
+/* ===============================
+   STATS
+================================ */
 .stats {
     text-align: center;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--bg-card);
     border-radius: 10px;
     margin-bottom: 1.5rem;
-    color: #666;
+    color: var(--text-muted);
 }
 
 .stats strong {
-    color: #667eea;
+    color: var(--primary);
     font-size: 1.2rem;
 }
 
+/* ===============================
+   ITEM LIST
+================================ */
 .item-list {
     list-style: none;
     max-height: 400px;
@@ -103,12 +149,12 @@ h1 {
     content: 'No hay items aún. ¡Añade uno!';
     display: block;
     text-align: center;
-    color: #999;
+    color: var(--text-muted);
     padding: 2rem;
 }
 
 .list-item {
-    background: #f8f9fa;
+    background: var(--bg-item);
     padding: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 10px;
@@ -119,25 +165,14 @@ h1 {
     animation: slideIn 0.3s ease;
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .list-item:hover {
     transform: translateX(5px);
-    background: #e9ecef;
+    background: var(--bg-item-hover);
 }
 
 .item-text {
     flex: 1;
-    color: #333;
+    color: var(--text-main);
 }
 
 .item-buttons {
@@ -159,38 +194,43 @@ h1 {
 }
 
 .btn-edit {
-    background: #ffa502;
+    background: var(--btn-edit);
     color: white;
 }
 
 .btn-edit:hover {
-    background: #ff8c00;
+    background: var(--btn-edit-hover);
 }
 
 .btn-delete {
-    background: #ff6b6b;
+    background: var(--btn-delete);
     color: white;
 }
 
 .btn-delete:hover {
-    background: #ff5252;
+    background: var(--btn-delete-hover);
 }
 
+/* ===============================
+   ACTIONS
+================================ */
 .actions {
     text-align: center;
 }
 
 .btn-danger {
-    background: #ff6b6b;
+    background: var(--btn-delete);
     color: white;
     width: 100%;
 }
 
 .btn-danger:hover {
-    background: #ff5252;
+    background: var(--btn-delete-hover);
 }
 
-/* Edit mode */
+/* ===============================
+   EDIT MODE
+================================ */
 .list-item.editing .item-text {
     display: none;
 }
@@ -203,7 +243,7 @@ h1 {
 .list-item.editing .edit-input {
     display: block;
     padding: 0.5rem;
-    border: 2px solid #667eea;
+    border: 2px solid var(--primary);
     border-radius: 8px;
     font-size: 1rem;
 }
@@ -214,7 +254,7 @@ h1 {
 
 .list-item.editing .btn-save {
     display: flex;
-    background: #4caf50;
+    background: var(--btn-save);
     color: white;
 }
 
@@ -222,6 +262,23 @@ h1 {
     display: none;
 }
 
+/* ===============================
+   KEYFRAMES
+================================ */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
 @media (max-width: 600px) {
     .card {
         padding: 1.5rem;
